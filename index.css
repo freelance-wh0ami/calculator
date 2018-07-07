@@ -1,0 +1,24 @@
+.calculator {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  float: left;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  min-width: 650px;
+  min-height: 450px;
+}
+.example {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  float: right;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  min-width: 650px;
+  min-height: 450px;
+  background: url("./grid.png") 80%/70% no-repeat;
+}

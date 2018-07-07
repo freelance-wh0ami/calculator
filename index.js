@@ -1,8 +1,13 @@
-var calculatordiv = document.querySelector(".calculator");
-var addiv = document.querySelector("#ab");
-var badiv = document.querySelector("#ba");
-var cmdiv = document.querySelector("#cm");
-var mmdiv = document.querySelector("#mm");
-var check1div = document.querySelector("#check1");
-var check2div = document.querySelector("#check2");
-var check3div = document.querySelector("#check3");
+var app = new Vue({
+  el: ".calculator",
+  name: "Calculator",
+  data: {
+    ab: "",
+    ba: "",
+    vtype: false,
+    check1: false,
+    check2: false,
+    check3: false
+  },
+  methods: {}
+});

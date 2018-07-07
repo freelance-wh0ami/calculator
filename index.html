@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="index.js"></script>
+    <script src="//unpkg.com/vue"></script>
     <link rel="stylesheet" href="index.css">
     <title>Calculator</title>
 </head>
@@ -14,15 +14,18 @@
     <button onclick="document.querySelector('.example').style.display='block'; setTimeout(function(){document.querySelector('.example').style.display='none';}, 5000)">показать пример того что должно было быть на 5 секунд</button>
     <div class="calculator">
         <div class="inputs">
-            <input type="number" name="123" id="ab">
-            <input type="number" name="123" id="ba">
-            <input type="checkbox" id="cm" value="см">
-            <input type="checkbox" id="mm" value="мм">
+            <input type="number" v-model="ab" name="123" id="ab">
+            x
+            <input type="number" v-model="ba" name="123" id="ba">
+            <form>
+            <input type="radio" name="v" v-model="vtype"  id="cm" value="см">
+            <input type="radio" name="v" v-model="vtype"  id="mm" value="мм">
+            </form>
         </div>
         <div class="addionalinputs">
-            <input type="checkbox" name="" id="check1">
-            <input type="checkbox" name="" id="check2">
-            <input type="checkbox" name="" id="check3">
+            <input type="checkbox" name="" v-model="check1">
+            <input type="checkbox" name="" v-model="check2">
+            <input type="checkbox" name="" v-model="check3">
         </div>
 
     </div>
@@ -30,5 +33,6 @@
 
     </div>
 </body>
+<script src="index.js"></script>
 
 </html>
